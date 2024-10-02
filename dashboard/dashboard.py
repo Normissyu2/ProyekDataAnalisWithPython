@@ -35,7 +35,7 @@ plt.tight_layout()
 # Display the plot in Streamlit
 st.pyplot(fig)
 
-data1 = pd.read_csv('data1.csv')
+data1 = pd.read_csv('dashboard/data1.csv')
 
 # Assuming data1 has columns: product_category_name, total_orders
 # Here, calculate return rates or ensure you have total_orders in data1
@@ -73,10 +73,10 @@ st.subheader('Data for Top 10 Product Categories')
 st.write(top10_category_return_rates)
 
 # Load return_rate.csv
-return_rates_df = pd.read_csv('return_rate.csv')
+return_rates_df = pd.read_csv('dashboard/return_rate.csv')
 
 # Load data1.csv
-data1_df = pd.read_csv('data1.csv')
+data1_df = pd.read_csv('dashboard/data1.csv')
 
 
 # Merge the two DataFrames on 'product_category_name'
@@ -116,7 +116,7 @@ else:
     st.write("Required columns for correlation analysis are missing in the merged data.")
 
 # Load the merged dataset
-merged_sellers_df = pd.read_csv('data2.csv')
+merged_sellers_df = pd.read_csv('dashboard/data2.csv')
 
 # Calculate sales volume per city
 sales_volume_per_city = merged_sellers_df.groupby('seller_city').agg({'order_item_id': 'count'}).reset_index()
