@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Baca data dari return_rate.csv
-category_return_rates = pd.read_csv('return_rate.csv')
+category_return_rates = pd.read_csv('dashboard/return_rate.csv')
 
 # Streamlit dashboard
 st.title('Top 10 Product Categories by Return Rate')
