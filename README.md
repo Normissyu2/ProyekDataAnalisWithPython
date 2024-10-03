@@ -67,12 +67,12 @@ To run the dashboard locally, follow these steps:
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone https://github.com/username/repository-name.git
+    git clone https://github.com/Normissyu2/ProyekDataAnalisWithPython.git
     ```
 
 2. Navigate into the project folder:
     ```bash
-    cd repository-name
+    cd ProyekDataAnalisWithPython
     ```
 
 3. Install the required Python libraries:
